@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jpcanto/proMar#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.9.0"
   }
 }
