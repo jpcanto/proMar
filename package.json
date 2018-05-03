@@ -1,25 +1,25 @@
 {
-    "name": "promar",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "gulp": "gulp"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/jpcanto/proMar.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/jpcanto/proMar/issues"
-    },
-    "homepage": "https://github.com/jpcanto/proMar#readme",
-    "dependencies": {
-        "bootstrap": "^3.3.7",
-        "font-awesome": "^4.7.0",
-        "node-sass": "^4.9.0"
-    }
+  "name": "promar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpcanto/proMar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpcanto/proMar/issues"
+  },
+  "homepage": "https://github.com/jpcanto/proMar#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "gulp-sass": "^4.0.1"
+  }
 }
