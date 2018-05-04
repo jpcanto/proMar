@@ -1,0 +1,71 @@
+.mainNavigation {
+    background-color: lighten($azulMain, 10%); 
+
+    .js &{
+        height: $altura;
+        overflow: hidden;
+    }
+
+    &__logo {
+        display: inline-block;
+        max-width: 350px;
+        height: $altura;
+        position: relative;
+        top: 10px;
+    }
+
+    &__hamburgger {
+        display: none;
+
+        .js &{
+            display: inline-block;
+            float: right;
+            height: 100%;
+            border: none;
+            background: transparent;
+
+            &:hover, &:focus{
+                background: lighten($azulMain, 1%);
+            }
+        }
+
+    }
+    &__menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: $amareloMain;
+            display: block;
+            font-size: 1.5em;
+            border-top: 1px solid darken($azulMain, 10%);
+            padding: 1em;
+
+            &:hover {
+                background: $azulMain;
+            }
+        }
+    }
+}
+
+.header {
+    height: 300px;
+
+    & .header__title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 4em;
+    }
+    & .header__subtitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 2em;
+    }
+}
+
+h1, h2, h3, h4, h4, h6 .title{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ultimosEventos__subtitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
