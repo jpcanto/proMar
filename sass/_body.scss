@@ -1,68 +1,81 @@
 .mainNavigation {
-    background-color: lighten($azulMain, 10%); 
-
-    .js &{
+    background-color: lighten($azulMain, 10%);
+    .js & {
         height: $altura;
-        overflow: hidden;
     }
-
     &__logo {
         display: inline-block;
         max-width: 350px;
         height: $altura;
         position: relative;
         top: 10px;
+        img {
+            height: 100%;
+            max-width: 100%;
+        }
     }
-
     &__hamburgger {
-        display: none;
-
-        .js &{
+        height: 100px;
+        .js & {
             display: inline-block;
             float: right;
             height: 100%;
             border: none;
             background: transparent;
-
-            &:hover, &:focus{
+            font-size: 2em;
+            color: darken($azulMain, 20%);
+            padding: 5px;
+            &:hover,
+            &:focus {
                 background: lighten($azulMain, 1%);
             }
         }
-
     }
     &__menu {
         list-style: none;
         margin: 0;
         padding: 0;
-
         a {
             color: $amareloMain;
             display: block;
             font-size: 1.5em;
             border-top: 1px solid darken($azulMain, 10%);
             padding: 1em;
-
             &:hover {
-                background: $azulMain;
+                background: lighten($azulMain, 7%);
             }
+        }
+        .js & {
+            display: none;
         }
     }
 }
 
 .header {
     height: 300px;
-
+    background-color: $azulMain;
+    margin-bottom: 0;
+    padding-bottom: 0;
     & .header__title {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 4em;
+        font-size: 38px;
+        font-weight: bold;
     }
     & .header__subtitle {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 2em;
+        font-size: 34px;
+    }
+    &img {
+        width: 10px;
     }
 }
 
-h1, h2, h3, h4, h4, h6 .title{
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 .title {
     font-family: 'Times New Roman', Times, serif;
 }
 

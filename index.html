@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" class="js">
+<html lang="pt-br" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -15,12 +15,13 @@
 <body>
 
     <nav class="mainNavigation">
-        <section class="container">
-            <a href="index.html" class="mainNavigation__logo"></a>
+        <div class="container">
+            <a href="index.html" class="mainNavigation__logo"><img src="img/logo.png"></a>
             <button class="mainNavigation__hamburgger" type="button">
                 <div class="mainNavigation__hamburggerParties">
-                    menu
+                    <span class="sr-only">Menu</span>
                 </div>
+                <i class= "fa fa-bars" area-hidden="true"></i>
             </button>
             <ul class="mainNavigation__menu">
                 <li><a href="#">Home</a></li>
@@ -28,12 +29,13 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </section>
+        </div>
     </nav>
-    <header class="jumbotron header">
+    <header class="header">
         <div class="container">
             <p class="header__title">Bem vindo à Pro-Mar</p>
             <h1 class="header__subtitle">Pro-Mar - Trazemos segurança para seu evento</h1>
+            <img src="./img/headerImg.jpeg">
         </div>
     </header>
     <section class="container ultimosEventos">
