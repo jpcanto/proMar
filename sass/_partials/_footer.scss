@@ -1,24 +1,30 @@
 .footer {
     background-color: lighten($azulMain, 10%);
-    height: 100px;
+    height: 120px;
     color: #333;
-    & ul{
+    padding: 1em 0;
+    & ul {
         overflow: auto;
-        padding: 0;
+        padding-left: 15%;
         width: 100%;
     }
-    & li{
-        width: 20%;
-        float: left;
+    & li {
+        overflow: hidden;
         box-sizing: border-box;
         list-style: none;
         padding: 0;
-        & a{
+        width: 20%;
+        & a {
             font-size: 1.5em;
             color: #333;
             display: block;
-            text-align: right;
+            text-align: center;
+            &:hover {
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+                transition: 1s ease;
+            }
         }
     }
-    
 }
