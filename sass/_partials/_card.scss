@@ -26,18 +26,24 @@
         overflow: hidden;
         img {
             max-width: 100%;
-            opacity: .5;
+            opacity: .7;
             transition: opacity .3s linear, transform .8s ease-in-out;
         }
     }
     &:hover {
         img {
             opacity: 1;
-            transform: scale(1.2) rotate(-5deg);
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            transition: 1s ease;
         }
     }
     &__btn {
         background: $azulMain;
+        border: none;
+        margin-left: 135px;
+        color: #222;
     }
     &:before {
         @include shadow('left', 5deg, 5px);
