@@ -1,0 +1,25 @@
+.header {
+    height: 300px;
+    background-color: $azulMain;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    min-height: 300px;
+    overflow: hidden;
+    & .header__title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 38px;
+        font-weight: bold;
+    }
+    & .header__subtitle {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 34px;
+    }
+    &__img {
+        background-image: url(../img/headerImg.jpeg);
+        height: 150px;
+        width: 100%;
+        background-size: auto 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+}

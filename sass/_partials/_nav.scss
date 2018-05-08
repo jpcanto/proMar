@@ -50,32 +50,3 @@
         }
     }
 }
-
-.header {
-    height: 300px;
-    background-color: $azulMain;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    & .header__title {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 38px;
-        font-weight: bold;
-    }
-    & .header__subtitle {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 34px;
-    }
-}
-
-h1,
-h2,
-h3,
-h4,
-h4,
-h6 .title {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.ultimosEventos__subtitle {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}

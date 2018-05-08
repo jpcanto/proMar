@@ -1,0 +1,48 @@
+.cardPortfolio {
+    @mixin shadow($dir, $angle, $dist) {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        background: #666;
+        width: 50%;
+        height: 20px;
+        bottom: 15px;
+        box-shadow: 0 15px 10px #555;
+        @if $dir=='left' {
+            transform: rotate($angle * -1);
+            left: $dist;
+        }
+        @else {
+            transform: rotate($angle);
+            right: $dist;
+        }
+    }
+    padding: 0;
+    margin: 0 auto;
+    border: 1px none $amareloMain;
+    position: relative;
+    &__img {
+        height: 230px;
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            opacity: .5;
+            transition: opacity .3s linear, transform .8s ease-in-out;
+        }
+    }
+    &:hover {
+        img {
+            opacity: 1;
+            transform: scale(1.2) rotate(-5deg);
+        }
+    }
+    &__btn {
+        background: $azulMain;
+    }
+    &:before {
+        @include shadow('left', 5deg, 5px);
+    }
+    &:after {
+        @include shadow('right', 5deg, 5px);
+    }
+}
