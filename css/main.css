@@ -115,23 +115,23 @@ h6 .title {
   height: 120px;
   color: #333;
   padding: 1em 0; }
-  .footer ul {
+  .footer .listFooter {
     overflow: auto;
     padding-left: 15%;
     width: 100%; }
-  .footer li {
+  .footer .listItemFooter {
     overflow: hidden;
     box-sizing: border-box;
     list-style: none;
     padding: 0;
     width: 20%; }
-    .footer li a {
+    .footer .listItemFooter .ancorFooter {
       font-size: 1.5em;
       color: #333;
       display: block;
       text-align: center; }
-      .footer li a:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
+      .footer .listItemFooter .ancorFooter:hover {
+        -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(1.5);
         transition: 1s ease; }
