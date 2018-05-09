@@ -23,7 +23,8 @@ h6 .title {
       height: 100%;
       max-width: 100%; }
   .mainNavigation__hamburgger {
-    height: 100px; }
+    height: 100px;
+    display: none; }
     .js .mainNavigation__hamburgger {
       float: right;
       height: 100%;
@@ -85,8 +86,8 @@ h6 .title {
   .cardPortfolio__btn {
     background: #97e9f9;
     border: none;
-    margin-left: 135px;
-    color: #222; }
+    color: #222;
+    margin-left: 135px; }
   .cardPortfolio:before {
     content: '';
     z-index: -1;

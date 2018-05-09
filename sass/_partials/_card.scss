@@ -42,8 +42,8 @@
     &__btn {
         background: $azulMain;
         border: none;
-        margin-left: 135px;
         color: #222;
+        margin-left: 135px;
     }
     &:before {
         @include shadow('left', 5deg, 5px);
