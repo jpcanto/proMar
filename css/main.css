@@ -23,8 +23,7 @@ h6 .title {
       height: 100%;
       max-width: 100%; }
   .mainNavigation__hamburgger {
-    height: 100px;
-    display: none; }
+    height: 100px; }
     .js .mainNavigation__hamburgger {
       float: right;
       height: 100%;
@@ -45,10 +44,10 @@ h6 .title {
       font-size: 1.5em;
       border-top: 1px solid #67dff6;
       padding: 1em; }
+      .js .mainNavigation__menu a {
+        display: none; }
       .mainNavigation__menu a:hover {
         background-color: #9ceaf9; }
-    .js .mainNavigation__menu {
-      display: none; }
 
 .header {
   height: 300px;
