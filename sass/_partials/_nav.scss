@@ -1,5 +1,19 @@
+.js.menuOpened {
+    overflow: hidden;
+    &:after {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 50px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .5);
+    }
+}
+
 .mainNavigation {
-    background-color: lighten($azulMain, 8%);
+    background-color: lighten($azulMain, 1%);
     .js & {
         height: $altura;
     }
@@ -10,6 +24,7 @@
         position: relative;
         top: 10px;
         img {
+            z-index: 99999;
             height: 100%;
             max-width: 100%;
         }
@@ -28,13 +43,19 @@
             &:focus {
                 background-color: darken($azulMain, 1%);
             }
+            @media screen and (min-width: #{$breakPoint}) {
+                display: none;
+            }
         }
     }
     &__menu {
+        overflow: hidden;
         list-style: none;
         margin: 0;
         padding: 0;
         a {
+            background-color: lighten($azulMain, 1%);
+            z-index: 20;
             color: $amareloMain;
             display: block;
             font-size: 1.5em;
@@ -42,10 +63,29 @@
             padding: 1em;
         }
         .js & {
-            display: none;
+            @media screen and (max-width: #{$breakPoint}) {
+                position: fixed;
+                z-index: 10;
+                top: $altura;
+                left: -100%;
+                width: 80%;
+                bottom: 0;
+                transition: left .3s ease-out;
+            }
         }
-        &:hover {
-            background-color: lighten($azulMain, 1%);
+        .menuOpened & {
+            display: block;
+            @media screen and (max-width: #{$breakPoint}) {
+                left: 0;
+            }
+        }
+        @media screen and (min-width: #{$breakPoint}) {
+            display: inline-block;
+            float: right;
+            height: $altura;
+            li {
+                display: inline-block;
+            }
         }
     }
 }

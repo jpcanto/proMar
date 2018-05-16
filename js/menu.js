@@ -18,12 +18,12 @@
 
     function closeMenu() {
         menuOpened = false;
-        html.classList.remove('menu-opened');
+        html.classList.remove('menuOpened');
     }
 
     function openMenu() {
         menuOpened = true;
-        html.classList.add('menu-opened');
+        html.classList.add('menuOpened');
     }
 
 }())
