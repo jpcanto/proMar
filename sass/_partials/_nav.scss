@@ -17,31 +17,21 @@
     .js & {
         height: $altura;
     }
-    &__logo {
-        display: inline-block;
-        max-width: 350px;
-        height: $altura;
-        position: relative;
-        top: 10px;
-        img {
-            z-index: 99999;
-            height: 100%;
-            max-width: 100%;
-        }
-    }
     &__hamburgger {
-        height: 100px;
+        height: 100%;
+        display: none;
         .js & {
+            display: initial;
             float: right;
             height: 100%;
             border: none;
             background: transparent;
             font-size: 2em;
-            color: darken($azulMain, 20%);
+            color: darken($azulMain, 40%);
             padding: 5px;
             &:hover,
             &:focus {
-                background-color: darken($azulMain, 1%);
+                background-color: darken($azulMain, 20%);
             }
             @media screen and (min-width: #{$breakPoint}) {
                 display: none;
@@ -49,7 +39,6 @@
         }
     }
     &__menu {
-        overflow: hidden;
         list-style: none;
         margin: 0;
         padding: 0;
@@ -80,11 +69,23 @@
             }
         }
         @media screen and (min-width: #{$breakPoint}) {
-            display: inline-block;
             float: right;
             height: $altura;
             li {
                 display: inline-block;
+                a{
+                    border-top: none;
+                    margin-top: -10px;
+                    transition: all .3s ease-in-out;
+                    padding: 15px;
+
+                    &:hover {
+                        list-style: none;
+                        text-decoration: none;
+                        transform: translateY(.5em);
+                        box-shadow: 0 5px 35px -10px black;
+                    }
+                }
             }
         }
     }

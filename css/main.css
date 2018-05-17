@@ -25,33 +25,24 @@ h6 .title {
   background-color: #9ceaf9; }
   .js .mainNavigation {
     height: 50px; }
-  .mainNavigation__logo {
-    display: inline-block;
-    max-width: 350px;
-    height: 50px;
-    position: relative;
-    top: 10px; }
-    .mainNavigation__logo img {
-      z-index: 99999;
-      height: 100%;
-      max-width: 100%; }
   .mainNavigation__hamburgger {
-    height: 100px; }
+    height: 100%;
+    display: none; }
     .js .mainNavigation__hamburgger {
+      display: initial;
       float: right;
       height: 100%;
       border: none;
       background: transparent;
       font-size: 2em;
-      color: #37d5f3;
+      color: #0b9db9;
       padding: 5px; }
       .js .mainNavigation__hamburgger:hover, .js .mainNavigation__hamburgger:focus {
-        background-color: #92e8f9; }
+        background-color: #37d5f3; }
       @media screen and (min-width: 700px) {
         .js .mainNavigation__hamburgger {
           display: none; } }
   .mainNavigation__menu {
-    overflow: hidden;
     list-style: none;
     margin: 0;
     padding: 0; }
@@ -79,26 +70,55 @@ h6 .title {
           left: 0; } }
     @media screen and (min-width: 700px) {
       .mainNavigation__menu {
-        display: inline-block;
         float: right;
         height: 50px; }
         .mainNavigation__menu li {
-          display: inline-block; } }
+          display: inline-block; }
+          .mainNavigation__menu li a {
+            border-top: none;
+            margin-top: -10px;
+            transition: all .3s ease-in-out;
+            padding: 15px; }
+            .mainNavigation__menu li a:hover {
+              list-style: none;
+              text-decoration: none;
+              transform: translateY(0.5em);
+              box-shadow: 0 5px 35px -10px black; } }
 
 .header {
-  height: 300px;
+  height: 400px;
   background-color: #c7f3fc;
   margin-bottom: 0;
   padding-bottom: 0;
-  min-height: 300px;
+  min-height: 400px;
   overflow: hidden; }
+  .header__logo {
+    float: left;
+    display: block; }
+  .header__titleBox {
+    float: right;
+    text-align: left; }
+    @media screen and (min-width: 1200px) {
+      .header__titleBox {
+        border-left: 5px double;
+        padding: 15px; } }
+    @media screen and (max-width: 1199px) {
+      .header__titleBox {
+        border-top: 5px double;
+        padding: 15px; } }
   .header .header__title {
     font-family: 'Times New Roman', Times, serif;
     font-size: 38px;
     font-weight: bold; }
+    @media screen and (max-width: 1199px) {
+      .header .header__title {
+        font-size: 26px; } }
   .header .header__subtitle {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 32px; }
+    @media screen and (max-width: 1199px) {
+      .header .header__subtitle {
+        font-size: 22px; } }
 
 .cardPortfolio {
   padding: 0;
